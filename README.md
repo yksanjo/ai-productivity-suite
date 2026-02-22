@@ -1,90 +1,84 @@
-# AI Productivity Suite 🤖📋
+# ai-productivity-suite
 
-A collection of AI-powered productivity and collaboration tools using the Model Context Protocol (MCP).
+## Detailed Description
 
-## Projects Included
+ai-productivity-suite is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-### 1. Task/Project Management
-AI-powered project management that creates tasks, updates statuses, assigns people, and reorganizes boards through natural language.
+## Problem Statement
 
-**Tools:**
-- `create_task` - Create new tasks with AI-suggested details
-- `update_task_status` - Update task status (todo, in-progress, done)
-- `assign_task` - Assign tasks to team members
-- `reorganize_board` - Reorder tasks on the board
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-### 2. Note-Taking Apps
-AI-powered note management that creates, searches, tags, and organizes notes.
+## Solution Overview
 
-**Tools:**
-- `create_note` - Create notes with AI-generated tags and organization
-- `search_notes` - Search notes using natural language
-- `tag_notes` - Auto-tag notes based on content
-- `organize_notes` - Organize notes into folders/categories
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### 3. Calendar/Scheduling
-AI-powered scheduling that books meetings, finds available times, and sends invites.
+## Key Features
 
-**Tools:**
-- `find_available_times` - Find available meeting slots
-- `book_meeting` - Schedule meetings with participants
-- `send_invites` - Send meeting invitations
-- `reschedule_meeting` - Reschedule existing meetings
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-### 4. Email Clients
-AI-powered email management that drafts replies, searches conversations, organizes folders, and filters spam.
+## Repository Structure
 
-**Tools:**
-- `draft_reply` - AI-generated email replies
-- `search_emails` - Search emails by content/sender
-- `organize_inbox` - Auto-organize emails into folders
-- `filter_spam` - Identify and filter spam emails
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
 ## Getting Started
 
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
 ```bash
-# Clone the repository
-git clone https://github.com/yksanjo/ai-productivity-suite.git
-
-# Install dependencies
-cd ai-productivity-suite
-npm install
-
-# Run the MCP server
-npm start
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-## MCP Server Configuration
+## Usage
 
-Add to your MCP settings:
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```json
-{
-  "mcpServers": {
-    "ai-productivity-suite": {
-      "command": "node",
-      "args": ["/path/to/ai-productivity-suite/dist/server.js"]
-    }
-  }
-}
-```
+## Quality Standards
 
-## Architecture
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-Each tool is implemented with:
-- **Read-Only Tools**: Use `readOnlyHint: true` for search/query operations
-- **State-Modifying Tools**: Require user confirmation before execution
-- **Multi-Step Workflows**: Chain multiple tools for complex tasks
+## Security
 
-## Badge
-
-[![MCP Server](https://img.shields.io/badge/MCP%20Server-Ready-blue)](https://modelcontextprotocol.io)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue)](https://www.typescriptlang.org)
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
