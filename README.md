@@ -1,5 +1,12 @@
 # ai-productivity-suite
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/ai-productivity-suite/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/ai-productivity-suite/actions)
+![License](https://img.shields.io/github/license/yksanjo/ai-productivity-suite)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/ai-productivity-suite)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/ai-productivity-suite)
+
 ## Detailed Description
 
 ai-productivity-suite is maintained as an industry-grade software project with production-ready engineering practices.  
